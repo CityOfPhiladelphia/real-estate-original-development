@@ -1,6 +1,8 @@
 # real-estate-tax
 
-An application for looking up and paying real estate tax balances.
+(_work in progress_)
+
+A front-end web app for looking up and paying real estate tax balances. Written in JavaScript using Vue.js. Backed by the [TIPS API](https://github.com/CityOfPhiladelphia/tips-api) account lookup microservice.
 
 ## Developing locally
 
