@@ -1,0 +1,6 @@
+export const AIS_ENDPOINT = 'https://api.phila.gov/ais_dev/v1/'
+export const AIS_API_KEY = ''
+export const TAX_BALANCE_ENDPOINT = 'https://api.phila.gov/tips/'
+export const TAX_BALANCE_API_KEY = ''
+export const EPAY_URL = 'https://test-secure.phila.gov/PaymentCenter/Gateway1/InitiatePurchase.aspx'
+export const EPAY_APPLICATION_ID = 'fcd68fd2-e923-4b03-a0e7-a678c2ed612a'
