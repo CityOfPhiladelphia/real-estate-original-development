@@ -2,6 +2,10 @@ import { stripIndent } from 'common-tags'
 
 import { EPAY_APPLICATION_ID } from '@/config'
 
+export function formatCurrency (input) {
+  return input.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+}
+
 export function generateEpayPayload ({
   accountNumber,
   totalDue,
