@@ -10,6 +10,7 @@
         <main>
           <router-view/>
         </main>
+        <RelatedContent/>
       </div>
     </div>
   </div>
@@ -19,12 +20,14 @@
 import PhilaHeader from '@/components/PhilaHeader'
 import PhilaHero from '@/components/PhilaHero'
 import PhilaBreadcrumbs from '@/components/PhilaBreadcrumbs'
+import RelatedContent from '@/components/RelatedContent'
 
 export default {
   components: {
     PhilaHeader,
     PhilaHero,
-    PhilaBreadcrumbs
+    PhilaBreadcrumbs,
+    RelatedContent
   }
 }
 </script>
@@ -32,4 +35,7 @@ export default {
 <style lang="sass">
 $fa-font-path: "~font-awesome/fonts"
 @import '~phila-standards/src/sass/phila-standards'
+
+main
+  margin-bottom: 1rem
 </style>
