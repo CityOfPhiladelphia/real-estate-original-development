@@ -4,7 +4,7 @@
 
     <div class="row columns">
       <div v-if="isLoading">
-        <i class="fa fa-spinner"></i>
+        <PhilaLoadingIndicator/>
       </div>
       <div v-else-if="error">
         <b>Error:</b> {{ error }}
