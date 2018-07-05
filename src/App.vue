@@ -13,6 +13,7 @@
         <RelatedContent/>
       </div>
     </div>
+    <PhilaFooter/>
   </div>
 </template>
 
@@ -21,13 +22,15 @@ import PhilaHeader from '@/components/PhilaHeader'
 import PhilaHero from '@/components/PhilaHero'
 import PhilaBreadcrumbs from '@/components/PhilaBreadcrumbs'
 import RelatedContent from '@/components/RelatedContent'
+import PhilaFooter from '@/components/PhilaFooter'
 
 export default {
   components: {
     PhilaHeader,
     PhilaHero,
     PhilaBreadcrumbs,
-    RelatedContent
+    RelatedContent,
+    PhilaFooter
   }
 }
 </script>
