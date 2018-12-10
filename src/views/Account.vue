@@ -113,14 +113,15 @@
               <td>{{ formatCurrency(year.total) }}</td>
               <td>{{ year.lienNum }}</td>
               <td>{{ year.solicitor }}</td>
-              <td>{{ year.status }}</td>
-              <!-- <td>
+              <!-- <td>{{ year.status }}</td> -->
+              <td>
                 <a class="popover-link"
                   @click="didClickPopoverLink"
                   >
-                  {{ balance.status }}
+                  {{ year.status }}
+                  <!-- {{ balance.status }} -->
                 </a>
-              </td> -->
+              </td>
 
             </tr>
             <tr class="strong">
@@ -248,9 +249,9 @@
       },
 			// TODO all the popover stuff (this and css) should come out of here and
 			// go into its own component.
-			// didClickPopoverLink(e) {
-			// 	this.$store.commit('setPopover', `<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>SEQR</strong>: This charge has a tax lien that is in the Sequestration Program. For more information regarding the status of the sequestration proceedings, you may call 215-686-3629, or search the Philadelphia Court's civil docket at <a href="http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer">Civil Docket Access</a>. You may enter the property owner's name in the Court’s “Caption” search box.`);
-			// },
+			didClickPopoverLink(e) {
+				this.$store.commit('setPopover', `<i class="fa fa-info-circle" aria-hidden="true"></i> <strong>SEQR</strong>: This charge has a tax lien that is in the Sequestration Program. For more information regarding the status of the sequestration proceedings, you may call 215-686-3629, or search the Philadelphia Court's civil docket at <a href="http://fjdefile.phila.gov/efsfjd/zk_fjd_public_qry_00.zp_disclaimer">Civil Docket Access</a>. You may enter the property owner's name in the Court’s “Caption” search box.`);
+			},
 		},
 	};
 </script>

@@ -7,27 +7,27 @@
 			</div>
 		</div>
 
-		<!-- <transition name="slide-fade" duration="2000">
+		<transition name="slide-fade" duration="2000">
 			<popover :html="popover"
 							 v-if="popover.length > 0"
 			>
 			</popover>
-		</transition> -->
+		</transition>
 	</div>
 </template>
 
 <script>
-  // import Popover from './components/Popover.vue';
-  //
+  import Popover from './components/Popover.vue';
+  
   export default {
-    // components: {
-    //   Popover,
-    // },
-    // computed: {
-    //   popover() {
-		// 		return this.$store.state.popover;
-		// 	},
-    // },
+    components: {
+      Popover,
+    },
+    computed: {
+      popover() {
+				return this.$store.state.popover;
+			},
+    },
   };
 </script>
 

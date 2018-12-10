@@ -5,12 +5,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // popover: '',
+    popover: '',
   },
   mutations: {
-    // setPopover(state, data) {
-		// 	state.popover = data;
-		// },
+    setPopover(state, data) {
+			state.popover = data;
+		},
   },
   actions: {
 
